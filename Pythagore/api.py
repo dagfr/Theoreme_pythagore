@@ -1,5 +1,6 @@
 import math
 
+
 unit = input("entrer l'unité des longueur du triangle")
 name_triangle = input("entrer le nom du triangle")  # nom du triangle
 
@@ -7,11 +8,14 @@ right_angle = input("entrer le sommet de l'angle droit")  # sommet de l'angle dr
 
 hypothenuse = input("entrer la nom du coté de l'hypothenuse")
 
-side_triangle2 = input("entrer la nom du coté du 2eme coté")
-length_side2 = input("entrer la longueur du 2eme coté")
-
 side_triangle3 = input("entrer la nom du coté du 3eme coté")
+side_triangle2 = input("entrer la nom du coté du 2eme coté")
+
+length_side2 = input("entrer la longueur du 2eme coté")
 length_side3 = input("entrer la longueur du 3eme coté")
+
+if length_side2.isdigit() or length_side3.isdigit():
+    print("Vous ne devez entrer que des nombres, pas de lettre ni de caractere speciaux")
 
 
 print(f"le triangle {name_triangle} est rectangle en {right_angle} d'hypothenuse {hypothenuse}")
